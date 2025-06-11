@@ -1,5 +1,5 @@
 const iconos = document.getElementById('iconos')
-fetch("../data/datos.json")
+fetch("./../data/datos.json")
     .then(response => response.json())
     .then(data =>{
         data.social.map((link) => {
