@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Presupuesto | BiciFix</title>
+</head>
+<body>
+    <header>
+        <!-- Logo de la empresa -->
+        <div class="miLogo" id="miLogo">
+            <a href="../index.html">
+                <img src="../assets/svg/logo.svg" alt="BiciFix - Taller de bicicletas" width="200">
+            </a>
+        </div>
+        <!-- Barra de navegación -->
+        <div class="navBar" id="navBar2"></div>
+    </header>
+
+    <main class="presupuesto-container">
+        <h1>Solicita tu presupuesto</h1>
+        
+        <form id="form-presupuesto">
+            <!-- Parte 1: Datos de contacto -->
+            <fieldset class="datos-contacto">
+                <legend>Tus datos</legend>
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre*:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="15" required 
+                           pattern="[A-Za-zÁ-Úá-ú\s]+" title="Solo letras (máx. 15 caracteres)">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="apellidos">Apellidos*:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="40" required 
+                           pattern="[A-Za-zÁ-Úá-ú\s]+" title="Solo letras (máx. 40 caracteres)">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono*:</label>
+                    <input type="tel" id="telefono" name="telefono" maxlength="9" required 
+                           pattern="[0-9]{9}" title="9 dígitos numéricos">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required 
+                           title="Ej: usuario@dominio.com">
+                           <span class="error-message"></span>
+                </div>
+            </fieldset>
+
+            <!-- Parte 2: Opciones de presupuesto -->
+            <fieldset class="opciones-presupuesto">
+                <legend>Detalles del servicio</legend>
+                
+                <div class="form-group">
+                    <label for="producto">Servicio*:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="" disabled selected>Selecciona...</option>
+                        <option value="30">Ajuste de frenos (30€)</option>
+                        <option value="50">Cambio de cadena (50€)</option>
+                        <option value="100">Reparación completa (100€)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="plazo">Plazo de entrega (días)*:</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="30" value="7" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Extras:</label>
+                    <div class="extras-container">
+                        <label><input type="checkbox" name="extra" value="20"> Limpieza profunda (+20€)</label>
+                        <label><input type="checkbox" name="extra" value="15"> Lubricación (+15€)</label>
+                        <label><input type="checkbox" name="extra" value="30"> Pintura personalizada (+30€)</label>
+                    </div>
+                </div>
+                
+                <div class="form-group presupuesto-final">
+                    <label>Presupuesto estimado:</label>
+                    <output id="total">0€</output>
+                </div>
+            </fieldset>
+
+            <!-- Parte 3: Envío -->
+            <div class="form-footer">
+                <label class="condiciones">
+                    <input type="checkbox" id="condiciones" required>
+                    Acepto las <a href="#">condiciones de privacidad</a>*
+                </label>
+                <button type="submit" class="btn-enviar">Enviar solicitud</button>
+                <button type="reset" class="btn-reset">Limpiar formulario</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="dispFlxRow">
+        <div class="redes dispFlxCol">
+            <h3>Nuestras Redes</h3>
+            <div class="iconos" id="iconos"></div>
+        </div>
+        <div class="contactos dispFlxCol">
+            <h3>Contactos</h3>
+            <p>Telefono Local</p>
+            <p>Telefono Movil</p>
+        </div>
+        <div class="ubicacion dispFlxCol">
+            <h3>Ubicanos</h3>
+            <a href="https://maps.app.goo.gl/3kwdqPEYxTuqd3Qz7">Ir a Google Maps</a>
+        </div>
+    </footer>
+
+    <script src="../js/navBar2.js"></script>
+    <script src="../js/presupuesto.js"></script>
+    <script src="../js/social.js"></script>
+</body>
+</html>

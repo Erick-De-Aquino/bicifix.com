@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Galería | BiciFix</title>
+</head>
+<body>
+    <header>
+        <!-- Logo de la empresa -->
+        <div class="miLogo" id="miLogo">
+            <a href="../index.html">
+                <img src="../assets/svg/logo.svg" alt="BiciFix - Taller de bicicletas" width="200">
+            </a>
+        </div>
+        <!-- Barra de navegación -->
+        <div class="navBar" id="navBar2"></div>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <h2>Nuestros Trabajos Destacados</h2>
+            <div class="carrusel-container">
+                <div class="carrusel">
+                    <div class="slide active">
+                        <img src="../assets/images/bici-reparacion-1.jpeg" alt="Bicicleta reparada en taller BiciFix">
+                        <p class="slide-caption">Reparación de cuadro profesional</p>
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/bici-reparacion-2.jpeg" alt="Personalización de ruedas">
+                        <p class="slide-caption">Personalización de ruedas</p>
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/bici-reparacion-3.jpg" alt="Ajuste de frenos">
+                        <p class="slide-caption">Ajuste de frenos hidráulicos</p>
+                    </div>
+                </div>
+                <button class="carrusel-btn prev" aria-label="Imagen anterior">&#10094;</button>
+                <button class="carrusel-btn next" aria-label="Imagen siguiente">&#10095;</button>
+            </div>
+
+            <div class="miniaturas-container">
+                <div class="miniatura active">
+                    <img src="../assets/images/bici-reparacion-1.jpeg" alt="Miniatura 1">
+                </div>
+                <div class="miniatura">
+                    <img src="../assets/images/bici-reparacion-2.jpeg" alt="Miniatura 2">
+                </div>
+                <div class="miniatura">
+                    <img src="../assets/images/bici-reparacion-3.jpg" alt="Miniatura 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="dispFlxRow">
+        <div class="redes dispFlxCol">
+            <h3>Nuestras Redes</h3>
+            <div class="iconos" id="iconos"></div>
+        </div>
+        <div class="contactos dispFlxCol">
+            <h3>Contactos</h3>
+            <p>Telefono Local</p>
+            <p>Telefono Movil</p>
+        </div>
+        <div class="ubicacion dispFlxCol">
+            <h3>Ubicanos</h3>
+            <a href="https://maps.app.goo.gl/3kwdqPEYxTuqd3Qz7">Ir a Google Maps</a>
+        </div>
+    </footer>
+
+    <script src="../js/galeria.js"></script>
+    <script src="../js/navBar2.js"></script>
+    <script src="../js/social.js"></script>
+</body>
+</html>

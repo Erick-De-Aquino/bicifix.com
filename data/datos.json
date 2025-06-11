@@ -1,0 +1,95 @@
+{
+    "navItems": [
+        {
+            "title":"INICIO",
+            "url":"./index.html"
+        },{
+            "title":"GALERIA",
+            "url":"./views/galeria.html"
+        },
+        {
+            "title":"PRESUPUESTO",
+            "url":"./views/presupuesto.html"
+        },
+        {
+            "title":"CONTACTO",
+            "url":"./views/contacto.html"
+        }
+    ],
+    "navItems2": [
+        {
+            "title":"INICIO",
+            "url":"index.html"
+        },{
+            "title":"GALERIA",
+            "url":"galeria.html"
+        },
+        {
+            "title":"PRESUPUESTO",
+            "url":"presupuesto.html"
+        },
+        {
+            "title":"CONTACTO",
+            "url":"contacto.html"
+        }
+    ],
+    "noticias":[
+        {
+            "titulo": "Nuevo sucursal en paseo de los Serranos 32.",
+            "fecha": "25-03-2025",
+            "contenido": "Esta nueva sucursal estara abierta a partir del mes de julio de este año y contara con instalaciones de mayor tamaño y, por lo tanto, mayor capacidad. Contaremos tambien con personal profecional certificados en todo tipo de reparaciones."
+        },
+        {
+            "titulo": "CERRADO POR VACACIONES",
+            "fecha": "18-02-2025",
+            "contenido": "BiciFix permanecera cerrado desde el 1 hasta el 15 de marzo por vacaciones. Ofrecemos disculpas por las molestias ocacionadas. Las bicicletas que se encuentran en nuestras instalaciones seran reparadas y entregadas antes de estas fechas."
+        },
+        {
+            "titulo": "NUEVO SERVICIO",
+            "fecha": "02-02-2025",
+            "contenido": "Nos sentimos orgullosos de seguir creciendo gracias a nuestros cliente y por eso estaremos ofreciendo a pertir del 1 de Abril el servicio de entregas a domicilio, servicio que podran contratar a traves de nuestra pag web o directamente en nuestro establecimiento."
+        }
+    ],
+    "banner":[
+        {
+            "titulo":"Reparaciones rápidas, calidad sobre ruedas",
+            "info":"Servicio especializado en Madrid desde 2023",
+            "url":"./views/presupuesto.html",
+            "btn":"Solicita tu presupuesto"
+        }
+    ],
+    "servicios":[
+        {
+            "titulo":"Chequeo General",
+            "descripcion":"Revicion de frenos, neumaticos y llantas",
+            "precio":"8€",
+            "fondo":"frenos"
+        },
+        {
+            "titulo":"Cambio de camara/s",
+            "descripcion":"Cambios de camaras al momento",
+            "precio":"10€",
+            "fondo":"neumatico"
+        },
+        {
+            "titulo":"Asesoria en compras",
+            "descripcion":"Te asesoramos en los productos que mejor te convengan segun tus gustos y requerimientos",
+            "precio":"GRATIS",
+            "fondo":"asesoria"
+        }
+    ],
+    "social":[
+        {
+            "icon":"fab fa-facebook-f"
+        },
+        {
+            "icon":"fab fa-instagram"
+        },
+        {
+            "icon":"fab fa-twitter"
+        },
+        {
+            "icon":"fab fa-linkedin"
+        }
+    ]
+}

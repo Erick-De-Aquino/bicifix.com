@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | BiciFix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Estilos específicos para el mapa */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo de la empresa -->
+        <div class="miLogo" id="miLogo">
+            <a href="../index.html">
+                <img src="../assets/svg/logo.svg" alt="BiciFix - Taller de bicicletas" width="200">
+            </a>
+        </div>
+        <!-- Barra de navegación -->
+        <div class="navBar" id="navBar2"></div>
+    </header>
+
+    <main class="contacto-container">
+        <h1>¿Dónde encontrarnos?</h1>
+        
+        <div class="contacto-grid">
+            <!-- Sección de Información de Contacto -->
+            <section class="info-contacto">
+                <h2>Contacto</h2>
+                <address>
+                    <p><strong>Dirección:</strong> Calle Rueda Libre, 123, Madrid</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+34911222333">911 222 333</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@bicifix.com">info@bicifix.com</a></p>
+                    <p><strong>Horario:</strong> Lunes a Viernes: 9:00 - 18:00</p>
+                </address>
+                
+                <div class="redes-sociales">
+                    <h3>Síguenos</h3>
+                    <div class="iconos-redes">
+                        <a href="#" aria-label="Facebook"><img src="../assets/svg/facebook-icon.svg" alt="Facebook"></a>
+                        <a href="#" aria-label="Instagram"><img src="../assets/svg/instagram-icon.svg" alt="Instagram"></a>
+                        <a href="#" aria-label="Twitter"><img src="../assets/svg/twitter-icon.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección del Mapa -->
+            <section class="mapa-container">
+                <h2>Ubicación</h2>
+                <div id="map"></div>
+                <p class="mapa-nota">Usa el mapa para calcular la ruta desde tu ubicación.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="dispFlxRow">
+        <div class="redes dispFlxCol">
+            <h3>Nuestras Redes</h3>
+            <div class="iconos" id="iconos"></div>
+        </div>
+        <div class="contactos dispFlxCol">
+            <h3>Contactos</h3>
+            <p>Telefono Local</p>
+            <p>Telefono Movil</p>
+        </div>
+        <div class="ubicacion dispFlxCol">
+            <h3>Ubicanos</h3>
+            <a href="https://maps.app.goo.gl/3kwdqPEYxTuqd3Qz7">Ir a Google Maps</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/navBar2.js"></script>
+    <script src="../js/social.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
