@@ -1,5 +1,5 @@
 const servi = document.getElementById('servi')
-fetch("../data/datos.json")
+fetch("data/datos.json")
     .then(response => response.json())
     .then(data =>{
         data.servicios.map((informacion)=>{
