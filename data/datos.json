@@ -3,7 +3,8 @@
         {
             "title":"INICIO",
             "url":"./index.html"
-        },{
+        },
+        {
             "title":"GALERIA",
             "url":"./views/galeria.html"
         },
@@ -20,7 +21,8 @@
         {
             "title":"INICIO",
             "url":"index.html"
-        },{
+        },
+        {
             "title":"GALERIA",
             "url":"galeria.html"
         },
