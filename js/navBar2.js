@@ -12,7 +12,8 @@ fetch("data/datos.json")
             navbar.innerHTML +=
             `
                 <a href="${pre}${link.url}">${link.title}</a>
-            `            
+            `     
+            console.log(link.url);
         })
     })
 
