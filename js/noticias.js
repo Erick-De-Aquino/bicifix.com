@@ -1,5 +1,5 @@
 const noti = document.getElementById('noticias')
-fetch("../data/datos.json")
+fetch("data/datos.json")
     .then(response => response.json())
     .then(data =>{
         data.noticias.map((informacion)=>{
