@@ -7,7 +7,7 @@ fetch("../data/datos.json")
             if(link.title === "INICIO"){
                 pre = ""
             }else{
-                pre = "../"
+                pre = "../views/"
             }
             navbar.innerHTML +=
             `
