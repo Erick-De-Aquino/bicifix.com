@@ -1,4 +1,6 @@
 const iconos = document.getElementById('iconos')
+const acceso = document.getElementById('navBar2')
+consol.log(acceso)
 fetch("data/datos.json")
     .then(response => response.json())
     .then(data =>{
