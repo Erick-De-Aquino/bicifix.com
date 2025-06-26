@@ -5,7 +5,7 @@ fetch("../data/datos.json")
         data.navItems2.map((link) => {
             let pre = ""
             if(link.title === "INICIO"){
-                pre = "./"
+                pre = "../"
             }else{
                 pre = "../views/"
             }
