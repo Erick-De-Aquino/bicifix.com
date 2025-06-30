@@ -7,7 +7,6 @@ fetch("data/datos.json")
             `
                 <a href="${link.url}">${link.title}</a>
             `
-            console.log(link.url);
         })
     })
 
